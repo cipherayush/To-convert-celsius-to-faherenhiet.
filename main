@@ -1,0 +1,12 @@
+#include <stdio.h>
+float convertTemperature(float celsius);
+int main()
+{ 
+    float far = convertTemperature(0);
+    printf("fareheniet convertTemperature is : %f", far);
+    
+}
+float convertTemperature(float celsius){
+    float far = celsius * (9/5) + 32;
+    return far;
+}
